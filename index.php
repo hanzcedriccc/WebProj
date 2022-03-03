@@ -10,6 +10,7 @@ and open the template in the editor.
         <title>Plantita</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/Plantita_styles.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
 .titleFont {
@@ -28,7 +29,6 @@ and open the template in the editor.
 body {
   font-family: monospace;
 }
-
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -37,56 +37,47 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
 button {
   background-color: #ffffff;
   color: black;
   padding: 14px 25px;
   margin: 8px 0;
+  border: solid;
   cursor: pointer;
   width: 100%;
+  border-radius: 14px;
   font-family: monospace;
 }
-
-
 button:hover {
   opacity: 0.8;
 }
-
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
   background-color:#ffffff;
   float: left;
-
 }
-
 .imgcontainer {
   text-align: center;
   margin-top: 25px;
   margin: 5px 0 15px 0;
   position: relative;
 }
-
 img.avatar {
   cursor: grab;
   width: 70%;
   border-radius: 5%;
 }
-
 .container {
   padding: 20px;
   padding-bottom: 55px;
-
   border-radius: 25px;
 }
-
 span.psw {
   float: right;
   padding-top: 16px;
   border: 2px solid black;
 }
-
 .modal {
   display: none; 
   position: fixed; 
@@ -100,14 +91,12 @@ span.psw {
   background-color: rgba(0,0,0,0.4); 
   padding-top: 60px;
 }
-
 .modal-content {
   background-color: #ffffff;
   margin: 5% auto 15% auto; 
   border-radius: 25px;
   width: 20%; 
 }
-
 .close {
   position: absolute;
   right: 25px;
@@ -116,41 +105,34 @@ span.psw {
   font-size: 35px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: red;
   cursor: pointer;
 }
-
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
 }
-
 @-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
 }
-  
 @keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
-
 @media screen and (max-width: 300px) {
   span.psw {
      display: block;
      float: none;
 }
 .cancelbtn {
-     width: 100%;
-      
+     width: 100%;    
 }
-
         </style>
     </head>
-    <body>
+    <body class="shop_bg">
         
         <nav class="navbar navbar-expand-lg nav-bg"> 
             <div class="row container-fluid">
@@ -158,26 +140,13 @@ span.psw {
                 <div class="col-sm-1">
                     <a class="titleFont" href="#">plantita</a>
                 </div>
-                <div class="col-sm-5">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active navFont" href="shopPage.php">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active navFont"  href="#">search bar</a>
-                        </li>
-                    </ul>
-                </div>
-                
                 <div class="col-sm-6">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
                         <li class="nav-item">
-                            <a class="nav-link active navFont"  href="#">About us</a>
+                            <a class="nav-link active navFont"  href="aboutusPage.php">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active navFont" href="#">
-                                Cart
-                            </a>
+                            <a class="nav-link active navFont" href="shopPage.php">Shop</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -190,7 +159,7 @@ span.psw {
                                             <form class="modal-content animate" method="post">
                                                 <div class="imgcontainer">
                                                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                                    <img src="plantssss.gif" alt="Avatar" class="avatar">
+                                                    <img src="resources/gif/plantssss.gif" alt="Avatar" class="avatar">
                                                 </div>
                                                 <div class="container">
                                                     <label for="uname"><b>Username</b></label>
@@ -215,7 +184,7 @@ span.psw {
                                             <form class="modal-content animate" method="post">
                                                 <div class="imgcontainer">
                                                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                                    <img src="plants1.gif" alt="Avatar" class="avatar">
+                                                    <img src="resources/gif/plants1.gif" alt="Avatar" class="avatar">
                                                 </div>
 
                                                 <div class="container">
