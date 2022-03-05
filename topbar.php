@@ -4,7 +4,7 @@ echo '
             <div class="row container-fluid">
 
                 <div class="col-sm-1">
-                    <a class="titleFont" href="#">plantita</a>
+                    <a class="titleFont" href="homePage.php">plantita</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
@@ -38,9 +38,6 @@ echo '
                                                         
                                                     <center><span class="psw modalText"><a href="#">Forgot Password?</a></span></center>
                                                 </div>
-                                                    <div class="container" style="background-color:#ffffff">
-                                                    <button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn modalBtn modalText">Cancel</button>
-                                                </div>
                                             </form>
                                         </div>
                                     
@@ -64,9 +61,6 @@ echo '
                                                     <input type="password" placeholder="Enter Password" name="password" required>
 
                                                     <button class="modalBtn modalText" type="submit">Register Account</button>
-                                                </div>
-                                                <div class="container" style="background-color:#ffffff">
-                                                    <button type="button" onclick="document.getElementById(\'id02\').style.display=\'none\'" class="cancelbtn modalBtn modalText">Cancel</button>
                                                 </div>
                                             </form>
                                         </div>

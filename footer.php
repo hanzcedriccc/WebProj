@@ -3,12 +3,12 @@ echo'
         <footer class="row footer">
             <div class="col">
                 <h2 class="footerText">stay updated</h2>
-                <p class="footerText">sign up with your email address to<br>receive news and updates</p>
+                <p class="footerText">sign up with your email address<br>to receive news and updates</p>
                 <form>
                     <input class"footerInput" type="email" placeholder="email address">
-                    <input type="button" value="Sign Up">
+                    <input class="footerbtn" type="button" value="Sign Up">
                 </form>
-                <p class="footerText">&nbsp &nbsp &nbsp &nbsphave a great day!</p>
+                <p class="footerText">&nbsp &nbsp &nbsphave a great day!</p>
             </div>
             <div class="col row">
                 <div class="col">
