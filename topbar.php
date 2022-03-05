@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Plantita</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="css/Plantita_styles.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body class="shop_bg">
-        
+<?php
+echo '
         <nav class="navbar navbar-expand-lg nav-bg"> 
             <div class="row container-fluid">
 
@@ -35,11 +20,11 @@ and open the template in the editor.
                                     Account
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="navFont dropbtn">Log In</button></li>
+                                    <li><button onclick="document.getElementById(\'id01\').style.display=\'block\'" style="width:auto;" class="navFont dropbtn">Log In</button></li>
                                         <div id="id01" class="modal">
                                             <form class="modal-content animate" method="post">
                                                 <div class="imgcontainer">
-                                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                    <span onclick="document.getElementById(\'id01\').style.display=\'none\'" class="close" title="Close Modal">&times;</span>
                                                     <img src="resources/gif/plantssss.gif" alt="Avatar" class="avatar">
                                                 </div>
                                                 <div class="container">
@@ -54,17 +39,17 @@ and open the template in the editor.
                                                     <center><span class="psw modalText"><a href="#">Forgot Password?</a></span></center>
                                                 </div>
                                                     <div class="container" style="background-color:#ffffff">
-                                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modalBtn modalText">Cancel</button>
+                                                    <button type="button" onclick="document.getElementById(\'id01\').style.display=\'none\'" class="cancelbtn modalBtn modalText">Cancel</button>
                                                 </div>
                                             </form>
                                         </div>
                                     
-                                    <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="navFont dropbtn">Sign Up</button></li>
+                                    <li><button onclick="document.getElementById(\'id02\').style.display=\'block\'" style="width:auto;" class="navFont dropbtn">Sign Up</button></li>
                                         <div id="id02" class="modal">
   
                                             <form class="modal-content animate" method="post">
                                                 <div class="imgcontainer">
-                                                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                    <span onclick="document.getElementById(\'id02\').style.display=\'none\'" class="close" title="Close Modal">&times;</span>
                                                     <img src="resources/gif/plants1.gif" alt="Avatar" class="avatar">
                                                 </div>
 
@@ -81,7 +66,7 @@ and open the template in the editor.
                                                     <button class="modalBtn modalText" type="submit">Register Account</button>
                                                 </div>
                                                 <div class="container" style="background-color:#ffffff">
-                                                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn modalBtn modalText">Cancel</button>
+                                                    <button type="button" onclick="document.getElementById(\'id02\').style.display=\'none\'" class="cancelbtn modalBtn modalText">Cancel</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -93,7 +78,7 @@ and open the template in the editor.
             </div>
         </nav>
         <script>
-        var modal = document.getElementById('id01');
+        var modal = document.getElementById(\'id01\');
 
         window.onclick = function(event) {
             if (event.target == modal) {
@@ -102,7 +87,7 @@ and open the template in the editor.
         }
         </script>
         <script>
-        var modal = document.getElementById('id02');
+        var modal = document.getElementById(\'id02\');
 
         window.onclick = function(event) {
             if (event.target == modal) {
@@ -110,5 +95,5 @@ and open the template in the editor.
             }
         }
         </script>
-    </body>
-</html>
+'
+?>

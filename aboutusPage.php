@@ -3,12 +3,14 @@
     <head>
     <title>About us - Plantita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/Plantita_styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     
     <body class="shop_bg">
+        <?php include 'topbar.php';?>
         <div class="mx-auto col-lg-10 container aboutusHeading">
             <img src="resources/img/aloe.jpg" class="plantImg rounded float-start" alt="aloe">
             <h2>&nbsp &nbspWho we are,<br>
@@ -25,7 +27,7 @@
             watered everyday. With that out of the way, we believe that the key to planting success is as simple as basic understanding
             on plant-care, and a good pair of hands!
             </p>
-
         </div>
+        <?php include 'footer.php';?>
     </body>
 </html>
